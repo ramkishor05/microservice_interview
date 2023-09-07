@@ -1,11 +1,12 @@
 package com.vinsguru.grpcserver;
 
-import com.vinsguru.gps.TripRequest;
-import com.vinsguru.gps.TripResponse;
-import io.grpc.stub.StreamObserver;
-
 import java.time.Duration;
 import java.time.LocalTime;
+
+import com.vinsguru.gps.TripRequest;
+import com.vinsguru.gps.TripResponse;
+
+import io.grpc.stub.StreamObserver;
 
 public class TripRequestObserver implements StreamObserver<TripRequest> {
 

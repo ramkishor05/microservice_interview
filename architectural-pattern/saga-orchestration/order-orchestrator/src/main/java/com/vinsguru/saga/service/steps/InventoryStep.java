@@ -1,12 +1,14 @@
 package com.vinsguru.saga.service.steps;
 
-import com.vinsguru.dto.InventoryRequestDTO;
-import com.vinsguru.dto.InventoryResponseDTO;
-import com.vinsguru.enums.InventoryStatus;
-import com.vinsguru.saga.service.WorkflowStep;
-import com.vinsguru.saga.service.WorkflowStepStatus;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
+
+import com.vinsguru.dto.InventoryRequestDTO;
+import com.vinsguru.dto.InventoryResponseDTO;
+import com.vinsguru.events.inventory.InventoryStatus;
+import com.vinsguru.saga.service.WorkflowStep;
+import com.vinsguru.saga.service.WorkflowStepStatus;
+
 import reactor.core.publisher.Mono;
 
 public class InventoryStep implements WorkflowStep {

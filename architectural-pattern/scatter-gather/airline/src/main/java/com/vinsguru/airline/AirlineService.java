@@ -1,12 +1,5 @@
 package com.vinsguru.airline;
 
-import com.vinsguru.model.FlightSchedule;
-import com.vinsguru.model.FlightSearchRequest;
-import com.vinsguru.util.ObjectUtil;
-import io.nats.client.Connection;
-import io.nats.client.Dispatcher;
-import io.nats.client.Nats;
-
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
@@ -14,6 +7,14 @@ import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+import com.vinsguru.model.FlightSchedule;
+import com.vinsguru.model.FlightSearchRequest;
+import com.vinsguru.util.ObjectUtil;
+
+import io.nats.client.Connection;
+import io.nats.client.Dispatcher;
+import io.nats.client.Nats;
 
 public class AirlineService {
 

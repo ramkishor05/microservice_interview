@@ -1,16 +1,18 @@
 package com.vinsguru.inventory.config;
 
+import java.util.function.Function;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
 import com.vinsguru.events.inventory.InventoryEvent;
 import com.vinsguru.events.order.OrderEvent;
 import com.vinsguru.events.order.OrderStatus;
 import com.vinsguru.inventory.service.InventoryService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
-import java.util.function.Function;
 
 @Configuration
 public class InventoryConfig {
